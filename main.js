@@ -23,8 +23,12 @@ var rtm = new RTM(endpoint, appkey, {
 
 var subscription = rtm.subscribe(channel, RTM.SubscriptionMode.SIMPLE);
 
-subscription.on('enter-subscribed', function() {
-    setInterval(search, 10000);
+var subscribed = false;
+subscription.on("enter-subscribed", function() {
+    if (!subscribed) {
+        subscribed = true;
+        setInterval(search, 10000);
+    }
 });
 
 rtm.start();
