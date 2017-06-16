@@ -1,0 +1,25 @@
+{
+  "name": "satori-youtube",
+  "version": "0.0.1",
+  "description": "This will push the latest published YouTube videos to the Satori Open Data youtube channel",
+  "main": "main.js",
+  "dependencies": {
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0",
+    "satori-sdk-js": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Llorx/satori-youtube.git"
+  },
+  "author": "Llorx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Llorx/satori-youtube/issues"
+  },
+  "homepage": "https://github.com/Llorx/satori-youtube#readme"
+}
